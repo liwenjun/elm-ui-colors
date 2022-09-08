@@ -1,6 +1,6 @@
 # 用于 Elm-UI 的颜色 Colors
 
-借鉴 [Tailwind CSS Color](https://tailwindcss.com/docs/customizing-colors), 当前版本 `V3.1.8`
+将 [Tailwind CSS](https://tailwindcss.com/docs/customizing-colors) （当前版本 `V3.1.8`）的颜色转换用于 `elm-ui`。
 
 ![颜色](https://github.com/liwenjun/elm-ui-colors/raw/main/assert/colors.png)
 
