@@ -2,7 +2,7 @@
 
 借鉴 [Tailwind CSS Color](https://tailwindcss.com/docs/customizing-colors), 当前版本 `V3.1.8`
 
-![颜色](./colors.png)
+![颜色](https://github.com/liwenjun/elm-ui-colors/raw/main/assert/colors.png)
 
 
 ## 安装 Install
