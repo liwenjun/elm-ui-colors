@@ -8,3 +8,8 @@ anyhow = "1"
 minreq = { version = "2", features = ["https"] }
 regex = "1.6.0"
 scraper = "0.13"
+
+[profile.release]
+panic = "abort"
+lto = true
+opt-level = "s"

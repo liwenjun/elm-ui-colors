@@ -12,6 +12,8 @@ $ elm install liwenjun/elm-ui-colors
 
 ## 使用 Usage
 
+[在Ellie中运行](https://ellie-app.com/jyBSHxf4wZya1)
+
 ```elm
 module Example exposing (main)
 
