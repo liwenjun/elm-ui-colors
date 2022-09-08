@@ -3,7 +3,7 @@
     "name": "liwenjun/elm-ui-colors",
     "summary": "应用于 elm-ui 的颜色 Colors for elm-ui",
     "license": "BSD-3-Clause",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "exposed-modules": [
         "Element.Colors"
     ],
