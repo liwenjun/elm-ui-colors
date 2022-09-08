@@ -12,7 +12,7 @@ $ elm install liwenjun/elm-ui-colors
 
 ## 使用 Usage
 
-[在Ellie中运行](https://ellie-app.com/jyBSHxf4wZya1)
+[在Ellie中运行](https://ellie-app.com/jyCmpmFkC2ta1)
 
 ```elm
 module Example exposing (main)
@@ -23,6 +23,7 @@ import Element exposing (..)
 import Element.Background as Background
 import Element.Colors exposing (..)
 
+
 main =
     layout
         [ Background.color zinc_300
@@ -32,55 +33,83 @@ main =
     <|
         column
             [ centerX, centerY ]
-            [ row [ width fill, padding 10, spacing 7 ]
+            [ row [ width fill, padding 10, spacing 10 ]
                 [ textEl "红色 Red"
-                , myEl red_50
-                , myEl red_100
-                , myEl red_200
-                , myEl red_300
-                , myEl red_400
-                , myEl red_500
-                , myEl red_600
-                , myEl red_700
-                , myEl red_800
-                , myEl red_900
+                , colorEl red_50
+                , colorEl red_100
+                , colorEl red_200
+                , colorEl red_300
+                , colorEl red_400
+                , colorEl red_500
+                , colorEl red_600
+                , colorEl red_700
+                , colorEl red_800
+                , colorEl red_900
                 ]
-            , row [ width fill, padding 10, spacing 7 ]
+            , row [ width fill, padding 10, spacing 10 ]
                 [ textEl "绿色 Green"
-                , myEl green_50
-                , myEl green_100
-                , myEl green_200
-                , myEl green_300
-                , myEl green_400
-                , myEl green_500
-                , myEl green_600
-                , myEl green_700
-                , myEl green_800
-                , myEl green_900
+                , colorEl green_50
+                , colorEl green_100
+                , colorEl green_200
+                , colorEl green_300
+                , colorEl green_400
+                , colorEl green_500
+                , colorEl green_600
+                , colorEl green_700
+                , colorEl green_800
+                , colorEl green_900
                 ]
-            , row [ width fill, padding 10, spacing 7 ]
+            , row [ width fill, padding 10, spacing 10 ]
                 [ textEl "蓝色 Blue"
-                , myEl blue_50
-                , myEl blue_100
-                , myEl blue_200
-                , myEl blue_300
-                , myEl blue_400
-                , myEl blue_500
-                , myEl blue_600
-                , myEl blue_700
-                , myEl blue_800
-                , myEl blue_900
+                , colorEl blue_50
+                , colorEl blue_100
+                , colorEl blue_200
+                , colorEl blue_300
+                , colorEl blue_400
+                , colorEl blue_500
+                , colorEl blue_600
+                , colorEl blue_700
+                , colorEl blue_800
+                , colorEl blue_900
+                ]
+            , row [ width fill, padding 10, spacing 6 ]
+                [ colorEl slate_500
+                , colorEl gray_500
+                , colorEl zinc_500
+                , colorEl neutral_500
+                , colorEl stone_500
+                , colorEl red_500
+                , colorEl orange_500
+                , colorEl amber_500
+                , colorEl yellow_500
+                , colorEl lime_500
+                , colorEl green_500
+                , colorEl emerald_500
+                , colorEl teal_500
+                , colorEl cyan_500
+                , colorEl sky_500
+                , colorEl blue_500
+                , colorEl indigo_500
+                , colorEl violet_500
+                , colorEl purple_500
+                , colorEl fuchsia_500
+                , colorEl pink_500
+                , colorEl rose_500
                 ]
             ]
 
-myEl c =
+
+colorEl : Color -> Element msg
+colorEl c =
     el
         [ Background.color c
-        , width (fill |> minimum 40)
-        , height (fill |> minimum 40)
+        , width (fill |> minimum 32)
+        , height (fill |> minimum 48)
         ]
         (text " ")
 
+
+textEl : String -> Element msg
 textEl txt =
     el [ width (fill |> minimum 100) ] (text txt)
 ```
